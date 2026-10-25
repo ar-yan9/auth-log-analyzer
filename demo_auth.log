@@ -1,0 +1,7 @@
+Oct 17 12:00:01 labhost sshd[411]: Failed password for demo-user from 192.0.2.10 port 22 ssh2
+Oct 17 12:00:02 labhost sshd[411]: Failed password for demo-user from 192.0.2.10 port 22 ssh2
+Oct 17 12:00:03 labhost sshd[411]: Failed password for demo-user from 192.0.2.10 port 22 ssh2
+Oct 17 12:00:04 labhost sshd[411]: Failed password for demo-user from 192.0.2.10 port 22 ssh2
+Oct 17 12:00:05 labhost sshd[411]: Failed password for demo-user from 192.0.2.10 port 22 ssh2
+Oct 17 12:00:06 labhost sshd[411]: Accepted password for demo-user from 192.0.2.10 port 22 ssh2
+Oct 17 12:00:07 labhost CRON[9]: session opened for user demo-user
