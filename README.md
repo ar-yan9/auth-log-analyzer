@@ -20,7 +20,15 @@ python3 ssh_adapter.py demo_auth.log demo-from-auth.jsonl --year 2026 --utc-offs
 python3 analyzer.py demo-from-auth.jsonl --format json
 ```
 
-On Windows, use `py -3.11` instead of `python3` if that is your launcher. Both synthetic demos intentionally return analyzer exit **1** because they contain suspicious patterns. The adapter writes a new file and never overwrites an existing one.
+Export Windows Security logon events on the machine that owns the log, from an elevated prompt with the built-in `wevtutil` tool, then convert and analyze the copy:
+
+```bat
+wevtutil qe Security /q:"*[System[(EventID=4624 or EventID=4625)]]" /f:XML /e:Events > security-logon.xml
+python3 windows_event_adapter.py security-logon.xml security-logon.jsonl
+python3 analyzer.py security-logon.jsonl --format json
+```
+
+On Windows, use `py -3.11` instead of `python3` if that is your launcher. The synthetic demos intentionally return analyzer exit **1** because they contain suspicious patterns. The adapter writes a new file and never overwrites an existing one.
 
 Exit codes: **0** = no alerts in the valid input; **1** = alerts found; **2** = invalid input, incomplete analysis or invalid settings. Partial alerts remain available in the report when records are invalid. A zero exit is not a claim that a system is secure.
 
@@ -38,7 +46,7 @@ One JSON object per line (JSONL):
 - `result`: exactly `failure` or `success`.
 - Extra fields are ignored and are never copied to reports. Blank lines are ignored.
 
-`ssh_adapter.py` converts common OpenSSH `Failed`/`Accepted` password, publickey and keyboard-interactive/PAM lines from Linux `auth.log` into this JSONL format. RFC3164 auth.log timestamps carry no year or timezone, so the adapter requires explicit `--year` and `--utc-offset` values rather than guessing. Unsupported lines become blank output lines, preserving the original line numbers used in analyzer evidence. Windows event logs, cloud audit exports, web-server logs and other Linux authentication messages are still unsupported; normalize those separately. Only analyze logs you own or have permission to inspect, and do not upload private logs or reports to this public repository.
+`ssh_adapter.py` converts common OpenSSH `Failed`/`Accepted` password, publickey and keyboard-interactive/PAM lines from Linux `auth.log` into this JSONL format. RFC3164 auth.log timestamps carry no year or timezone, so the adapter requires explicit `--year` and `--utc-offset` values rather than guessing. Unsupported lines become blank output lines, preserving the original line numbers used in analyzer evidence. `windows_event_adapter.py` converts Windows Security logon events 4624 (success) and 4625 (failure), exported as XML by the built-in `wevtutil` tool, into this JSONL format. Its exports carry full UTC timestamps, so no dating flags are needed; events without a network source address (local logons report `-`) are skipped and counted, and output line numbers refer to the new JSONL file. Cloud audit exports, web-server logs and other Linux authentication messages are still unsupported; normalize those separately. Only analyze logs you own or have permission to inspect, and do not upload private logs or reports to this public repository.
 
 ## Detection rules
 
@@ -64,10 +72,10 @@ When an alert appears, review the referenced lines locally, confirm the affected
 
 ## Tests and demonstration
 
-`test_analyzer.py` and `test_ssh_adapter.py` use synthetic events, temporary files and documentation-only IP addresses. Tests cover thresholds, expiry, inclusive boundaries, source separation, same-account success correlation, sort/deduplication, redaction, IPv6, timezone conversion, invalid input, adapter bounds, no-overwrite behavior, line-number preservation and exit states.
+`test_analyzer.py`, `test_ssh_adapter.py` and `test_windows_event_adapter.py` use synthetic events, temporary files and documentation-only IP addresses. Tests cover thresholds, expiry, inclusive boundaries, source separation, same-account success correlation, sort/deduplication, redaction, IPv6, timezone conversion, invalid input, adapter bounds, no-overwrite behavior, line-number preservation, Windows SystemTime parsing, skipped local logons, end-to-end adapter-to-analyzer runs and exit states.
 
-`demo.jsonl` and `demo_auth.log` contain fictional accounts. Expected normalized-JSONL rules: failure-burst, possible-password-spray and success-after-failures. Expected OpenSSH demo rules: failure-burst and success-after-failures. No real logs or credentials are included.
+`demo.jsonl`, `demo_auth.log` and `demo_windows_security.xml` contain fictional accounts. Expected normalized-JSONL rules: failure-burst, possible-password-spray and success-after-failures. Expected OpenSSH and Windows demo rules: failure-burst and success-after-failures. No real logs or credentials are included.
 
 ## Next work
 
-Add explicit adapters for Windows exports with fixtures, broader Linux auth-message coverage, interval grouping for repeated bursts, and performance benchmarks. This is a working starter, not a SIEM replacement. Understand the sliding-window code and demonstrate the tests before presenting it in an interview; do not claim production deployment or real incident-response experience.
+Add explicit adapters for cloud audit exports with fixtures, broader Linux auth-message coverage, interval grouping for repeated bursts, and performance benchmarks. This is a working starter, not a SIEM replacement. Understand the sliding-window code and demonstrate the tests before presenting it in an interview; do not claim production deployment or real incident-response experience.
