@@ -1,0 +1,105 @@
+<Events>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4625</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:00:01.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">administrator</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">192.0.2.10</Data>
+      <Data Name="Status">0xC000006A</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4625</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:00:11.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">administrator</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">192.0.2.10</Data>
+      <Data Name="Status">0xC000006A</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4625</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:00:21.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">administrator</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">192.0.2.10</Data>
+      <Data Name="Status">0xC000006A</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4625</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:00:31.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">administrator</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">192.0.2.10</Data>
+      <Data Name="Status">0xC000006A</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4625</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:00:41.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">administrator</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">192.0.2.10</Data>
+      <Data Name="Status">0xC000006A</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4624</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:00:51.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">administrator</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">192.0.2.10</Data>
+      <Data Name="WorkstationName">LAB-WS1</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4624</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:01:01.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">LAB-WS1$</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="IpAddress">2001:DB8::10</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <EventID>4625</EventID>
+      <TimeCreated SystemTime="2026-01-01T00:01:11.0000000Z" />
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">demo.user</Data>
+      <Data Name="TargetDomainName">LAB</Data>
+      <Data Name="LogonType">2</Data>
+      <Data Name="IpAddress">-</Data>
+      <Data Name="Status">0xC000006A</Data>
+    </EventData>
+  </Event>
+</Events>
