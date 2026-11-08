@@ -1,0 +1,157 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:00:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:00:02Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:00:03Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:00:04Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:00:05Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:00:06Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:05:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "AWSInternal",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:06:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "ap-south-1",
+      "sourceIPAddress": "203.0.113.20",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "123456789012",
+        "arn": "arn:aws:iam::123456789012:root"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-10-17T12:07:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "sourceIPAddress": "192.0.2.30",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user",
+        "principalId": "AIDASAMPLEUSERID001",
+        "arn": "arn:aws:iam::123456789012:user/demo-user"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIAEXAMPLE"
+        }
+      }
+    }
+  ]
+}
