@@ -1,0 +1,80 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "createdDateTime": "2026-10-17T12:00:01Z",
+    "userDisplayName": "Demo User",
+    "userPrincipalName": "demo-user@example.invalid",
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "192.0.2.10",
+    "status": {
+      "errorCode": 50126,
+      "failureReason": "Invalid username or password."
+    }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "createdDateTime": "2026-10-17T12:00:02Z",
+    "userDisplayName": "Demo User",
+    "userPrincipalName": "demo-user@example.invalid",
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "192.0.2.10",
+    "status": {
+      "errorCode": 50126,
+      "failureReason": "Invalid username or password."
+    }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "createdDateTime": "2026-10-17T12:00:03Z",
+    "userDisplayName": "Demo User",
+    "userPrincipalName": "demo-user@example.invalid",
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "192.0.2.10",
+    "status": {
+      "errorCode": 50126,
+      "failureReason": "Invalid username or password."
+    }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000004",
+    "createdDateTime": "2026-10-17T12:00:04Z",
+    "userDisplayName": "Demo User",
+    "userPrincipalName": "demo-user@example.invalid",
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "192.0.2.10",
+    "status": {
+      "errorCode": 50126,
+      "failureReason": "Invalid username or password."
+    }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000005",
+    "createdDateTime": "2026-10-17T12:00:05Z",
+    "userDisplayName": "Demo User",
+    "userPrincipalName": "demo-user@example.invalid",
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "192.0.2.10",
+    "status": {
+      "errorCode": 50126,
+      "failureReason": "Invalid username or password."
+    }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000006",
+    "createdDateTime": "2026-10-17T12:00:06Z",
+    "userDisplayName": "Demo User",
+    "userPrincipalName": "demo-user@example.invalid",
+    "userId": "00000000-0000-0000-0000-000000000001",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "192.0.2.10",
+    "status": {
+      "errorCode": 0,
+      "failureReason": null
+    }
+  }
+]
