@@ -1,0 +1,144 @@
+{
+  "kind": "admin#reports#activities",
+  "etag": "synthetic",
+  "items": [
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:00:05.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "alice@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "192.0.2.77",
+      "events": [
+        {
+          "type": "login",
+          "name": "login_failure"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:00:15.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "bob@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "192.0.2.77",
+      "events": [
+        {
+          "type": "login",
+          "name": "login_failure"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:00:25.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "carol@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "192.0.2.77",
+      "events": [
+        {
+          "type": "login",
+          "name": "login_failure"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:00:35.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "dan@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "192.0.2.77",
+      "events": [
+        {
+          "type": "login",
+          "name": "login_failure"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:00:45.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "erin@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "192.0.2.77",
+      "events": [
+        {
+          "type": "login",
+          "name": "login_failure"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:02:10.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "frank@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "203.0.113.9",
+      "events": [
+        {
+          "type": "login",
+          "name": "login_success"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "id": {
+        "time": "2026-10-17T12:02:40.000Z",
+        "uniqueQualifier": "1"
+      },
+      "actor": {
+        "email": "demo-user@example.invalid",
+        "profileId": "100000000000000000001"
+      },
+      "ipAddress": "192.0.2.77",
+      "events": [
+        {
+          "type": "login",
+          "name": "logout"
+        }
+      ]
+    },
+    {
+      "kind": "admin#reports#activity",
+      "actor": {
+        "email": "x@example.invalid"
+      },
+      "events": [
+        {
+          "type": "login",
+          "name": "login_failure"
+        }
+      ]
+    }
+  ]
+}
